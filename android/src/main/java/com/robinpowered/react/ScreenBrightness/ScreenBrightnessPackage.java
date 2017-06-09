@@ -1,6 +1,7 @@
 package com.robinpowered.react.ScreenBrightness;
 
 import android.app.Activity;
+import android.provider.Settings;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

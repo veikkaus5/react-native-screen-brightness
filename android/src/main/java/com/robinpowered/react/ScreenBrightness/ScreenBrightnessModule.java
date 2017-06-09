@@ -62,11 +62,16 @@ public class ScreenBrightnessModule extends ReactContextBaseJavaModule
     }
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+    public void onActivityResult(Activity activity, int requestCode, int resultCode, Intent intent) {
         if (requestCode == writeSettingsRequestCode) {
             onPermissionResult();
         }
     }
+
+	@Override
+	public void onNewIntent(Intent intent) {
+
+	}
 
     /**
      * Called by the main activity when the ACTION_MANAGE_WRITE_SETTINGS result is received.
